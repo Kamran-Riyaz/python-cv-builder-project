@@ -10,7 +10,7 @@ document = Document()
 
 # profile picture
 document.add_picture(
-    'pp.jpg', width=Inches(2.0) , height=Inches(2.0)
+    'me.jpeg', width=Inches(2.0) , height=Inches(2.0)
     )
 
 # name phone and email
