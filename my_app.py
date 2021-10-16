@@ -14,12 +14,12 @@ document.add_picture(
     )
 
 # name phone and email
-name = input("What is your name?")
+name = input("What is your name? ")
 speak('Hello ' + name + ' how are you today? ')
 
-speak('What is your phone number?')
-phone_number = input("What is your phone number?")
-email = input("What is your email ?")
+speak('What is your phone number? ')
+phone_number = input("What is your phone number? ")
+email = input("What is your email? ")
 
 document.add_paragraph(
     name + ' | ' + phone_number + ' | ' + email
@@ -35,8 +35,8 @@ document.add_heading('Work Experience')
 p = document.add_paragraph()
 
 company = input('Enter Company ')
-from_date = input('From Date')
-to_date = input('To Date')
+from_date = input('From Date ')
+to_date = input('To Date ')
 
 p.add_run(company + ' ').bold = True
 p.add_run(from_date + '-' + to_date + '\n').italic = True
@@ -56,8 +56,8 @@ while True:
         p = document.add_paragraph()
 
         company = input('Enter Company ')
-        from_date = input('From Date')
-        to_date = input('To Date' )
+        from_date = input('From Date ')
+        to_date = input('To Date ' )
 
         p.add_run(company + ' ').bold = True
         p.add_run(from_date + '-' + to_date + '\n').italic = True
@@ -96,7 +96,7 @@ while True:
 section = document.sections[0]
 footer = section.footer
 p = footer.paragraphs[0]
-p.text = "CV generated using Amigoscode Python project"
+p.text = "Your Footer here"
 
 
 document.save('cv.docx')
